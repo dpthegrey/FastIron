@@ -16,22 +16,25 @@ Including another URLconf
 from django.conf import settings
 from django.conf.urls.static import static
 
+from django.conf.urls import url
 from django.contrib import admin
-from django.urls import path
+# from django.urls import path
 
-from products.views import ProductListView, product_list_view
+from products.views import ProductListView, product_list_view, ProductDetailView, product_detail_view
 
 from .views import home_page, about_page, contact_page, login_page, register_page
 
 urlpatterns = [
-    path('', home_page),
-    path('about/', about_page),
-    path('contact/', contact_page),
-    path('login/', login_page),
-    path('register/', register_page),
-    path('products/', ProductListView.as_view()),
-    path('products-fbv/', product_list_view),
-    path('admin/', admin.site.urls),
+    url(r'^$', home_page),
+    url(r'^about/$', about_page),
+    url(r'^contact/$', contact_page),
+    url(r'^login/$', login_page),
+    url(r'^register/$', register_page),
+    url(r'^products/$', ProductListView.as_view()),
+    url(r'^products-fbv/$', product_list_view),
+    url(r'^products/(?P<pk>\d+)/$', ProductDetailView.as_view()),
+    url(r'^products-fbv/(?P<pk>\d+)/$', product_detail_view),
+    url(r'^admin/', admin.site.urls),
 ]
 
 if settings.DEBUG:
