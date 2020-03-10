@@ -1,0 +1,14 @@
+prefix=/Users/dbergbrxkisez/Desktop/ml-project/bulldozer-price-prediction-project/env
+exec_prefix=/Users/dbergbrxkisez/Desktop/ml-project/bulldozer-price-prediction-project/env
+libdir=/Users/dbergbrxkisez/Desktop/ml-project/bulldozer-price-prediction-project/env/lib
+includedir=/Users/dbergbrxkisez/Desktop/ml-project/bulldozer-price-prediction-project/env/include
+
+Name: FreeType 2
+URL: https://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 22.1.16
+Requires:
+Requires.private: zlib, libpng
+Libs: -L${libdir} -lfreetype
+Libs.private: 
+Cflags: -I${includedir}/freetype2

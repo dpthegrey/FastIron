@@ -1,0 +1,88 @@
+{
+  "build": "py37h0a44026_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-64",
+  "constrains": [],
+  "depends": [
+    "libcxx >=4.0.1",
+    "python >=3.7,<3.8.0a0"
+  ],
+  "extracted_package_dir": "/Users/dbergbrxkisez/opt/miniconda3/pkgs/kiwisolver-1.1.0-py37h0a44026_0",
+  "features": "",
+  "files": [
+    "lib/python3.7/site-packages/kiwisolver-1.1.0.dist-info/INSTALLER",
+    "lib/python3.7/site-packages/kiwisolver-1.1.0.dist-info/METADATA",
+    "lib/python3.7/site-packages/kiwisolver-1.1.0.dist-info/RECORD",
+    "lib/python3.7/site-packages/kiwisolver-1.1.0.dist-info/WHEEL",
+    "lib/python3.7/site-packages/kiwisolver-1.1.0.dist-info/top_level.txt",
+    "lib/python3.7/site-packages/kiwisolver.cpython-37m-darwin.so"
+  ],
+  "fn": "kiwisolver-1.1.0-py37h0a44026_0.conda",
+  "legacy_bz2_md5": "2d7be45707fb1f76d3595981178dfe49",
+  "license": "BSD 3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "/Users/dbergbrxkisez/opt/miniconda3/pkgs/kiwisolver-1.1.0-py37h0a44026_0",
+    "type": 1
+  },
+  "md5": "3cfbc0cb171c36d5c38f31cf456bed34",
+  "name": "kiwisolver",
+  "package_tarball_full_path": "/Users/dbergbrxkisez/opt/miniconda3/pkgs/kiwisolver-1.1.0-py37h0a44026_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.7/site-packages/kiwisolver-1.1.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+        "sha256_in_prefix": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+        "size_in_bytes": 4
+      },
+      {
+        "_path": "lib/python3.7/site-packages/kiwisolver-1.1.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "9cd217fd0a3609309e2fa9cf64bae1afe4cd4ab60ccd8a7f2ab71d7fd5369e84",
+        "sha256_in_prefix": "9cd217fd0a3609309e2fa9cf64bae1afe4cd4ab60ccd8a7f2ab71d7fd5369e84",
+        "size_in_bytes": 1789
+      },
+      {
+        "_path": "lib/python3.7/site-packages/kiwisolver-1.1.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "e47ddb7aaf069a9a1766c204398ba2549184a355e1031d2eb90dbd4fbb237567",
+        "sha256_in_prefix": "e47ddb7aaf069a9a1766c204398ba2549184a355e1031d2eb90dbd4fbb237567",
+        "size_in_bytes": 498
+      },
+      {
+        "_path": "lib/python3.7/site-packages/kiwisolver-1.1.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "ecde8cd7291822bc74b77b89fa19675588bc38b19682c468e0eb48a2ab3c10d1",
+        "sha256_in_prefix": "ecde8cd7291822bc74b77b89fa19675588bc38b19682c468e0eb48a2ab3c10d1",
+        "size_in_bytes": 110
+      },
+      {
+        "_path": "lib/python3.7/site-packages/kiwisolver-1.1.0.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "c6ac168fba121e5a488dcc3640c25bf29b9314f7630c13bbf00669f608d387d7",
+        "sha256_in_prefix": "c6ac168fba121e5a488dcc3640c25bf29b9314f7630c13bbf00669f608d387d7",
+        "size_in_bytes": 11
+      },
+      {
+        "_path": "lib/python3.7/site-packages/kiwisolver.cpython-37m-darwin.so",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/concourse/worker/volumes/live/4860cec4-fdd2-46f9-68a6-42ab7a5e4d82/volume/kiwisolver_1556560833419/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac",
+        "sha256": "fcfd18ff24bf3d354a27374342abf6862abea218c56f89a9d798c28a3d9b87e3",
+        "sha256_in_prefix": "45ee13ffead5e50efad19b70006cd52b42de4ddfc2498870158ecc8e29b17443",
+        "size_in_bytes": 157440
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "b6e0eb6c9da46e099e4aa9ed2f389ad6cf40c00d48816a956690f85c88d9d859",
+  "size": 54909,
+  "subdir": "osx-64",
+  "timestamp": 1556561085901,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-64/kiwisolver-1.1.0-py37h0a44026_0.conda",
+  "version": "1.1.0"
+}

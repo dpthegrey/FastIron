@@ -1,0 +1,41 @@
+{
+  "build": "py37h7241aed_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-64",
+  "constrains": [],
+  "depends": [
+    "blas 1.0 mkl",
+    "libgfortran >=3.0.1,<4.0.0.a0",
+    "mkl >=2019.4,<2021.0a0",
+    "mkl-service >=2,<3.0a0",
+    "mkl_fft",
+    "mkl_random",
+    "numpy-base 1.18.1.*",
+    "python >=3.7,<3.8.0a0"
+  ],
+  "extracted_package_dir": "/Users/dbergbrxkisez/opt/miniconda3/pkgs/numpy-1.18.1-py37h7241aed_0",
+  "features": "",
+  "files": [],
+  "fn": "numpy-1.18.1-py37h7241aed_0.conda",
+  "legacy_bz2_md5": "20c27e80e22f6cf3ebeafc026570a034",
+  "license": "BSD 3-Clause",
+  "link": {
+    "source": "/Users/dbergbrxkisez/opt/miniconda3/pkgs/numpy-1.18.1-py37h7241aed_0",
+    "type": 1
+  },
+  "md5": "89f421894574247a69fa7c5efc8f5bb1",
+  "name": "numpy",
+  "package_tarball_full_path": "/Users/dbergbrxkisez/opt/miniconda3/pkgs/numpy-1.18.1-py37h7241aed_0.conda",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "requested_spec": "numpy",
+  "sha256": "0ce3aab72464c47465e50391f31e526166e579b6e333477f89cf2d751fde8316",
+  "size": 5066,
+  "subdir": "osx-64",
+  "timestamp": 1579206092706,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-64/numpy-1.18.1-py37h7241aed_0.conda",
+  "version": "1.18.1"
+}
