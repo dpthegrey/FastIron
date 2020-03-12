@@ -1,28 +1,28 @@
 {% extends "base.html" %}
 
 {% block content%}
-<div class="container">
-    <div class="row">
-        {% for obj in object_list %}
-        <div class="col">
-            {{ forloop.counter }}
-            {% include 'products/snippets/card.html' with instance=obj%}
 
-            <!-- 
+<div class="row">
+    {% for obj in object_list %}
+    <div class="col">
+        {{ forloop.counter }}
+        {% include 'products/snippets/card.html' with instance=obj%}
+
+        <!-- 
             {% if obj.title == "Something else" %}
 
             {% endif %} 
         -->
 
-            {% if forloop.counter|divisibleby:3 %}
-        </div>
+        {% if forloop.counter|divisibleby:3 %}
     </div>
-    <div class="row">
-        <div class="col-12">
-            <hr />
-        </div>
-        {% elif forloop.counter|divisibleby:2 %}
+</div>
+<div class="row">
+    <div class="col-12">
+        <hr />
     </div>
+    {% elif forloop.counter|divisibleby:2 %}
+</div>
 </div>
 <div class="row">
     <div class="col-12">
@@ -34,5 +34,5 @@
 
 {% endfor %}
 </div>
-</div>
+
 {% endblock %}
