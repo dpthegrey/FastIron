@@ -28,11 +28,15 @@
         {% endfor %}
         <tr>
             <td colspan="2"></td>
-            <td><b>Subtotal</b> {{cart.subtotal }}</td>
+            <td><b>Subtotal</b> {{ cart.subtotal }}</td>
         </tr>
         <tr>
             <td colspan="2"></td>
-            <td><b>Total</b> {{cart.subtotal }}</td>
+            <td><b>Total</b> {{ cart.total }}</td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td><a class="btn btn-lg btn-success" href="{% url 'carts:checkout' %}">Checkout</a></td>
         </tr>
     </tbody>
 </table>
