@@ -14,7 +14,7 @@ class BillingProfile(models.Model):
         User, unique=True, null=True, blank=True, on_delete=models.CASCADE)
     email = models.EmailField()
     active = models.BooleanField(default=True)
-    update = models.DateTimeField(auto_now_add=True)
+    update = models.DateTimeField(auto_now=True)
     timestamp = models.DateTimeField(auto_now_add=True)
     # customer_id in Stripe or Braintree
 
