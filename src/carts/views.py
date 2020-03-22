@@ -1,3 +1,4 @@
+from django.http import JsonResponse
 from django.core.exceptions import ObjectDoesNotExist
 from django.shortcuts import render, redirect
 
@@ -21,8 +22,6 @@ def cart_home(request):
 
 def cart_update(request):
     product_id = request.POST.get('product_id')
-    if request.is_ajax():
-        print("akax request")
     if product_id is not None:
         try:
             product_obj = Product.objects.get(id=product_id)
@@ -32,11 +31,21 @@ def cart_update(request):
         cart_obj, new_obj = Cart.objects.new_or_get(request)
         if product_obj in cart_obj.products.all():
             cart_obj.products.remove(product_obj)
+            added = False
         else:
             # cart_obj.products.add(product_id)
             cart_obj.products.add(product_obj)
+            added = True
         request.session['cart_items'] = cart_obj.products.count()
         # return redirect(product_obj.get_absolute_url())
+        if request.is_ajax():  # Asynchronous JavaScript and XML / JSON
+            print("Ajax request")
+            json_data = {
+                "added": added,
+                "removed": not added,
+
+            }
+            return JsonResponse(json_data)
     return redirect("cart:home")
 
 
