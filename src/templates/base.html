@@ -28,9 +28,10 @@
 
             productForm.submit(function (event) {
                 event.preventDefault();
-                console.log("Form is not sending")
+                // console.log("Form is not sending")
                 var thisForm = $(this)
-                var actiomEndpoint = thisForm.attr("action");
+                // var actiomEndpoint = thisForm.attr("action"); // API Endpoint
+                var actiomEndpoint = thisForm.attr("data-endpoint")
                 var httpMethod = thisForm.attr("method");
                 var formData = thisForm.serialize();
 
@@ -49,6 +50,9 @@
                         }
                         var navbarCount = $(".navbar-cart-count")
                         navbarCount.text(data.cartItemCount)
+                        if (window.location.href.indexOf("cart") != -1) {
+                            refreshCart()
+                        }
                     },
                     error: function (errorData) {
                         console.log("error")
@@ -56,6 +60,29 @@
                     }
                 })
             })
+
+            function refreshCart() {
+                console.log("in current cart")
+                var cartTable = $(".cart-table")
+                var cartBody = cartTable.find(".cart-body")
+                cartBody.html("<h1>Changed</h1>")
+
+                var refreshCartUrl = '/api/cart/';
+                var refreshCartMethod = "GET";
+                var data = {};
+                $.ajax({
+                    url: refreshCartUrl,
+                    method: refreshCartMethod,
+                    data: data,
+                    success: function (data) {
+                        console.log("success")
+                    },
+                    error: function (errorData) {
+                        console.log("error")
+                        console.log(errorData)
+                    }
+                })
+            }
         })
 
     </script>
