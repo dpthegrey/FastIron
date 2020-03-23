@@ -1,6 +1,6 @@
 from django.http import JsonResponse
-from django.core.exceptions import ObjectDoesNotExist
 from django.shortcuts import render, redirect
+
 
 from accounts.forms import LoginForm, GuestForm
 from accounts.models import GuestEmail
@@ -8,11 +8,24 @@ from accounts.models import GuestEmail
 from addresses.forms import AddressForm
 from addresses.models import Address
 
-
 from billing.models import BillingProfile
 from orders.models import Order
 from products.models import Product
 from .models import Cart
+
+
+def cart_detail_api_view(request):
+    cart_obj, new_obj = Cart.objects.new_or_get(request)
+    products = [{"name": x.name, "price": x.price}
+                for x in cart_obj.products.all()]  # [<object>, <object>, <object>]
+    # products_list = []
+    # for x in cart_obj.products.all():
+    #     products_list.append(
+    #             {"name": x.name, "price": x.price}
+    #         )
+    cart_data = {"products": products,
+                 "subtotal": cart_obj.subtotal, "total": cart_obj.total}
+    return JsonResponse(cart_data)
 
 
 def cart_home(request):
@@ -22,6 +35,7 @@ def cart_home(request):
 
 def cart_update(request):
     product_id = request.POST.get('product_id')
+
     if product_id is not None:
         try:
             product_obj = Product.objects.get(id=product_id)
@@ -38,7 +52,7 @@ def cart_update(request):
             added = True
         request.session['cart_items'] = cart_obj.products.count()
         # return redirect(product_obj.get_absolute_url())
-        if request.is_ajax():  # Asynchronous JavaScript and XML / JSON
+        if request.is_ajax():  # Asynchronous JavaScript And XML / JSON
             print("Ajax request")
             json_data = {
                 "added": added,
@@ -65,7 +79,7 @@ def checkout_home(request):
         request)
     address_qs = None
     if billing_profile is not None:
-        if request.user.is_authenticated:
+        if request.user.is_authenticated():
             address_qs = Address.objects.filter(
                 billing_profile=billing_profile)
         order_obj, order_obj_created = Order.objects.new_or_get(
@@ -89,7 +103,6 @@ def checkout_home(request):
             request.session['cart_items'] = 0
             del request.session['cart_id']
             return redirect("cart:success")
-
     context = {
         "object": order_obj,
         "billing_profile": billing_profile,
@@ -103,3 +116,4 @@ def checkout_home(request):
 
 def checkout_done_view(request):
     return render(request, "carts/checkout-done.html", {})
+
