@@ -13,7 +13,7 @@ def home_page(request):
         "content": " Welcome to the homepage.",
 
     }
-    if request.user.is_authenticated():
+    if request.user.is_authenticated:
         context["premium_content"] = "YEAHHHHHH"
     return render(request, "home_page.html", context)
 
@@ -49,7 +49,6 @@ def contact_page(request):
     #     print(request.POST.get('email'))
     #     print(request.POST.get('content'))
     return render(request, "contact/view.html", context)
-
 
 
 def home_page_old(request):

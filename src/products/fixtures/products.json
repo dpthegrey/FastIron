@@ -1,0 +1,58 @@
+[
+{
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+        "title": "T-Shirt",
+        "slug": "t-shirt",
+        "description": "This is an awesome shirt. Buy it :)",
+        "price": "39.99",
+        "image": "",
+        "featured": false,
+        "active": true,
+        "timestamp": "2020-03-11T20:01:29.248Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+        "title": "Hat",
+        "slug": "hat",
+        "description": "This is my awesome hat",
+        "price": "39.99",
+        "image": "products/1494742701/1494742701.jpg",
+        "featured": false,
+        "active": true,
+        "timestamp": "2020-03-11T20:01:29.248Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+        "title": "Lorem Ipsum",
+        "slug": "lorem-ipsum",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempus viverra libero at accumsan. Integer elit ante, sodales rutrum vehicula quis, tempus eget ipsum. Phasellus maximus, enim vitae consectetur euismod, dolor augue lobortis neque, eu tincidunt lectus lorem sed massa. Nulla suscipit auctor ligula, sit amet finibus dui. Praesent posuere tellus vitae ullamcorper rhoncus. Sed viverra, velit sed accumsan sagittis, neque diam mollis leo, sed varius erat enim et sem. Nam ut tempus nulla. Nullam bibendum accumsan scelerisque. Quisque convallis imperdiet dolor at mollis. Praesent sapien massa, rutrum ut risus ut, porta posuere massa. Etiam pharetra ultrices congue.\r\n\r\nEtiam a vehicula magna. Aliquam interdum quam in est consequat cursus. Nulla feugiat posuere condimentum. Suspendisse a arcu eu nisl elementum varius. Etiam tempor quam at sapien tincidunt consequat. Nam viverra id nibh a aliquet. Pellentesque sagittis rhoncus nulla et ultrices. Donec dictum enim posuere vehicula efficitur. Sed ultricies non nulla vitae ullamcorper.\r\n\r\nSuspendisse posuere rutrum nibh, et luctus orci ultrices eu. In magna quam, tincidunt eget augue vitae, elementum congue velit. Cras eu euismod nunc. Vestibulum a tellus id dui feugiat condimentum. Ut semper posuere lacus eu ultricies. In convallis elit lacus, vel suscipit tellus sodales eget. Vestibulum pretium nunc magna, eget condimentum est sagittis eu. Morbi est ante, molestie non purus quis, volutpat pretium leo. Integer non hendrerit tellus. Aenean accumsan nulla vitae sagittis sagittis. Maecenas purus nisl, ornare ac massa eget, euismod rutrum nibh. Sed ut aliquam justo. Sed vulputate neque velit. Integer feugiat nunc sit amet malesuada facilisis. Aliquam rutrum sed eros sit amet finibus. Morbi viverra mattis ex eget tempor.\r\n\r\nNam ut tortor leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur euismod tellus non ante porta sagittis. Vestibulum rutrum odio id purus lobortis, et luctus quam pretium. Nunc at venenatis dui. Mauris eleifend dui non odio faucibus, sit amet condimentum elit placerat. Etiam accumsan, leo sit amet aliquam tempus, nunc enim gravida lacus, ut laoreet tellus quam at ipsum. Fusce non hendrerit lacus. Maecenas egestas orci et molestie sagittis. Nullam lobortis hendrerit metus lobortis tincidunt. Etiam vitae dignissim risus. Vestibulum in justo imperdiet lorem sagittis lobortis. Fusce blandit ut risus a consectetur. Suspendisse mattis iaculis leo, et auctor ipsum.\r\n\r\nVivamus elementum lectus vel est convallis euismod. Suspendisse ac purus elit. Vestibulum fermentum tortor quis est fringilla pretium. Mauris posuere nisi ac sapien pellentesque tristique vitae non risus. Proin tincidunt enim a convallis lobortis. Aenean pulvinar nulla quis turpis sagittis vehicula. Vivamus maximus erat vel arcu faucibus tincidunt. Sed tristique tortor et magna egestas ornare. Cras porta, nulla at maximus sagittis, sem dolor bibendum nisi, ut vehicula ex augue gravida mauris. Duis auctor tortor eu nunc suscipit, id placerat sem aliquam. Nulla mauris mauris, faucibus quis vestibulum ac, consectetur vitae lectus. Sed molestie consectetur posuere. Sed sed sem mattis, gravida augue et, volutpat urna. Nullam ut metus risus. Ut in felis dignissim, congue lectus ac, placerat enim.\r\n\r\nCurabitur ullamcorper sagittis auctor. Quisque turpis ex, congue et eros eget, auctor interdum libero. Vivamus semper justo orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus elementum dui ligula, vel tristique nibh sodales blandit. Donec libero tellus, finibus sit amet varius lobortis, porttitor sodales tellus. Suspendisse a nunc ultrices, feugiat velit ac, sollicitudin dolor. Fusce vitae porta lorem, vel rhoncus nunc. Fusce ac lorem feugiat, lobortis sem a, scelerisque dui. Donec ultricies ex placerat augue rutrum imperdiet. Sed lorem augue, varius et justo ac, tempus facilisis ex. Curabitur ligula velit, aliquam vel mauris et, euismod aliquam sem. Ut nunc mi, vulputate sit amet nulla ac, mollis suscipit elit. Etiam ex odio, mattis eget pulvinar ac, faucibus in leo. Quisque vehicula malesuada nisi, sit amet euismod dui bibendum ac. Curabitur egestas turpis nec diam sagittis placerat.\r\n\r\nVestibulum vitae justo eget velit vestibulum molestie. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent viverra congue risus vel viverra. Nulla at tincidunt ipsum, id porta velit. Nullam ac faucibus felis. Proin viverra in diam ac posuere. Sed erat lectus, ultrices nec ullamcorper id, aliquet et justo. Nam enim dolor, molestie eget nibh eget, lacinia vestibulum ligula. Sed sit amet turpis vel quam blandit placerat.\r\n\r\nSed et quam at odio ornare malesuada at sit amet augue. Sed non enim non lacus suscipit ultrices. Vivamus fermentum quis nisi a suscipit. Sed nec quam fringilla, mollis leo ac, vehicula mi. Nam porttitor pharetra magna non fringilla. Sed sit amet diam turpis. Pellentesque ut justo velit. Integer ut augue quis diam aliquet convallis eget at tortor. Nulla rhoncus arcu vel hendrerit placerat. Sed maximus quis sem quis elementum. Etiam dignissim commodo turpis sit amet placerat. Sed bibendum dolor sit amet arcu scelerisque, nec lobortis erat rutrum.\r\n\r\nVivamus at orci lacinia ipsum cursus consequat. Donec imperdiet metus malesuada libero sagittis rhoncus. Ut pellentesque massa elit, rutrum dapibus nisi interdum a. Proin ut dictum odio. Maecenas ligula odio, accumsan quis lacus ut, finibus tempor nisl. Mauris et massa tempor, condimentum lectus sit amet, tristique neque. Praesent vitae maximus ante, sit amet gravida ex.\r\n\r\nCurabitur egestas augue nec nisi vehicula aliquam. Morbi et eros nulla. Vivamus quis velit dictum, tincidunt urna tincidunt, feugiat augue. In facilisis non dolor eget vestibulum. Vivamus sagittis a sem ut pellentesque. Nam sed orci ac ligula consequat varius ac malesuada nisi. Ut consequat nulla risus. Ut sit amet porttitor metus, a euismod ante. Sed iaculis feugiat fermentum. Aenean consequat lorem mi, nec vestibulum risus faucibus eu. Sed eu sodales justo, in semper justo. Ut a risus gravida, rutrum justo ut, euismod risus. Aenean a ante at ipsum gravida aliquam. Pellentesque aliquet est at magna mollis, sed hendrerit arcu posuere. Sed ultricies non sapien eu mattis. Praesent tempus porta arcu, et elementum mauris blandit ac.\r\n\r\nAenean eget vehicula diam. Vestibulum vitae sem augue. Donec a sollicitudin sem. Donec augue est, fringilla vitae eleifend vel, commodo scelerisque massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque vel est id eros dapibus euismod ut nec.\r\nClass aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi et consequat mi. Curabitur ut nunc neque. Praesent volutpat ligula et laoreet vulputate. Mauris consequat condimentum quam vitae venenatis. Cras aliquet imperdiet augue. Nunc commodo et neque ac gravida. Mauris vitae pharetra magna, sit amet vestibulum augue. Sed mattis eget odio ut mollis. Phasellus et pretium diam. Nam non dolor justo. Pellentesque nec orci eu ex venenatis ullamcorper dignissim in metus. Proin libero metus, ornare non massa id, porta ultrices odio.\r\n\r\nMaecenas finibus magna nec laoreet consequat. Quisque nec interdum nisl. Morbi luctus dolor id imperdiet lacinia. Proin vehicula quam sit amet orci eleifend commodo. Fusce ut sapien non enim pretium ullamcorper. Mauris tempus rutrum erat, in condimentum erat aliquet et. Phasellus sit amet ligula porta ex dignissim maximus nec porttitor erat. Praesent magna risus, fermentum ut lobortis accumsan, lobortis quis tellus. Nulla placerat orci tincidunt vestibulum vestibulum. Praesent id ante tristique, dignissim felis nec, imperdiet dolor. Vestibulum eget libero a felis pretium sodales et vel arcu. Aenean nec accumsan arcu. Morbi ac porta turpis. Proin semper ornare nibh, in cursus lacus aliquet id. In at sapien sed dolor cursus molestie. Vestibulum blandit viverra commodo.\r\n\r\nAenean vestibulum efficitur tristique. Aliquam eget massa placerat, pellentesque sapien in, viverra nisl. Morbi vel volutpat erat. Pellentesque condimentum ipsum ut dolor iaculis, nec faucibus justo fermentum. Pellentesque laoreet libero eu nunc gravida sagittis. Maecenas cursus laoreet arcu a aliquam. Sed consequat, sapien vitae pretium vehicula, erat sem consequat justo, non tincidunt neque nibh sed ante. Nulla interdum nibh sit amet ligula euismod bibendum. Ut pharetra blandit leo eget porta. Nunc venenatis, nunc vel venenatis dignissim, augue ligula pellentesque purus, et imperdiet lectus sapien in lorem. Suspendisse ullamcorper hendrerit sem in eleifend.\r\n\r\nEtiam faucibus justo convallis dui luctus, eget venenatis nisl vehicula. Phasellus risus ipsum, cursus vitae justo a, aliquam maximus massa. Duis suscipit maximus placerat. Vestibulum egestas magna vel malesuada congue. Vivamus non turpis quis libero elementum posuere quis nec est. Nunc eleifend ultricies aliquet. Etiam ullamcorper et lectus quis posuere. Cras lectus sapien, interdum ut quam et, faucibus imperdiet magna. In lorem sem, iaculis id ipsum sed, hendrerit laoreet erat. Sed ornare pharetra sapien in semper. Nam ornare nisi sit amet urna dignissim molestie. Curabitur lacinia consectetur sem. Nam vel gravida dui. Phasellus ut mattis velit, ac elementum felis. Vivamus ut ante turpis. Phasellus facilisis ipsum nunc, sit amet fringilla.",
+        "price": "99.99",
+        "image": "",
+        "featured": true,
+        "active": true,
+        "timestamp": "2020-03-11T20:01:29.248Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+        "title": "T-shirt",
+        "slug": "t-shirt-c9vu",
+        "description": "another one?>?",
+        "price": "39.99",
+        "image": "",
+        "featured": false,
+        "active": true,
+        "timestamp": "2020-03-11T20:01:29.248Z"
+    }
+}
+]
