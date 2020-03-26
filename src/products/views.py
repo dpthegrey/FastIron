@@ -75,7 +75,7 @@ class ProductDetailSlugView(ObjectViewedMixin, DetailView):
         #instance = get_object_or_404(Product, slug=slug, active=True)
         try:
             instance = Product.objects.get(slug=slug, active=True)
-        except Product.DoesNotExist:
+        except Product.ObjectDoesNotExist:
             raise Http404("Not found..")
         except Product.MultipleObjectsReturned:
             qs = Product.objects.filter(slug=slug, active=True)
