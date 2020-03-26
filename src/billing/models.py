@@ -1,3 +1,4 @@
+import stripe
 from django.conf import settings
 from django.db import models
 from django.db.models.signals import post_save
@@ -8,6 +9,9 @@ User = settings.AUTH_USER_MODEL
 
 # abc@randomemail.com -->> 1000000 billing profile
 # user abc@randomemail.com -- 1 billing profile
+
+stripe.api_key = "sk_test_FQfSktUAeYgQ51Jqqc7VJ9sp00aUrZajyb"
+
 
 class BillingProfileManager(models.Manager):
     def new_or_get(self, request):
