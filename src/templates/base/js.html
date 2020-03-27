@@ -16,8 +16,16 @@ slim is missing ajax -->
 <!-- jquery-confirm JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
 
+<!-- Js Render -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jsrender/1.0.6/jsrender.min.js"></script>
+{% include 'base/js_templates.html' %}
+
 <!-- Django Secure AJAX JS -->
 <script src='{% static "js/csrf.ajax.js" %}'></script>
 
 <!-- fastiron Custom JS -->
 <script src="{% static 'js/fastiron.js' %}"></script>
+
+
+<!-- fastiron Main JS -->
+<script src="{% static 'js/fastiron.main.js' %}"></script>
