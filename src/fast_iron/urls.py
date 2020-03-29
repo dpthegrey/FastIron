@@ -42,7 +42,7 @@ urlpatterns = [
     url(r'^api/cart/$', cart_detail_api_view, name='api-cart'),
     url(r'^cart/', include(('carts.urls', 'carts'), namespace='cart')),
     url(r'^billing/payment-method/$', payment_method_view,
-        name='billng-payment-method'),
+        name='billing-payment-method'),
     url(r'^billing/payment-method/create/$', payment_method_createview,
         name='billing-payment-method-endpoint'),
     url(r'^register/', RegisterView.as_view(), name='register'),
