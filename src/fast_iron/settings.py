@@ -57,6 +57,12 @@ AUTH_USER_MODEL = 'accounts.User'  # changes the built-in user model to ours
 FORCE_SESSION_TO_ONE = False
 FORCE_INACTIVE_USER_ENDSESSION = False
 
+
+MAILCHIMP_API_KEY = "e0fb5d5b12a866916c53dddd1b2ec682-us19"
+MAILCHIMP_DATA_CENTER = "us19"
+MAILCHIMP_EMAIL_LIST_ID = "a9580697ab"
+
+
 STRIPE_SECRET_KEY = "sk_test_FQfSktUAeYgQ51Jqqc7VJ9sp00aUrZajyb"
 STRIPE_PUB_KEY = 'pk_test_jbYKNdGc06kkYEd5eXIXeQdu00yxQPkVex'
 
