@@ -24,9 +24,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(
 SECRET_KEY = 'wl^p0)6g6a6+k=68avns64-x=m5gi@%9y%ht+gv)iuw)i21jpz'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.herokuapp.com']
 
 
 # Application definition
@@ -173,4 +173,3 @@ CSRF_COOKIE_SECURE = True
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 SECURE_HSTS_SECONDS = 1000000
 SECURE_FRAME_DENY = True
-
