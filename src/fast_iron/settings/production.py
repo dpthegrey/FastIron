@@ -30,6 +30,20 @@ DEBUG = False
 ALLOWED_HOSTS = ['.herokuapp.com']
 
 
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'testbyrandom@gmail.com'
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = 'Python ecommerce <testbyrandom@gmail.com>'
+
+
+MANAGERS = (
+    ('admin', "testbyrandom@gmail.com"),
+)
+
+ADMINS = MANAGERS
+
 # Application definition
 
 INSTALLED_APPS = [
