@@ -74,6 +74,7 @@ STRIPE_PUB_KEY = 'pk_test_jbYKNdGc06kkYEd5eXIXeQdu00yxQPkVex'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.storage.CompressedManifestStaticFilesStorage',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -163,6 +164,8 @@ STATICFILES_DIRS = [
 
 STATIC_ROOT = os.path.join(os.path.dirname(
     BASE_DIR), "STATIC_CDN", "static_root")
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(os.path.dirname(
