@@ -2,6 +2,7 @@ from datetime import timedelta
 from django.conf import settings
 from django.urls import reverse
 from django.db import models
+from django.db.models import Q
 from django.db.models.signals import pre_save, post_save
 from django.contrib.auth.models import (
     AbstractBaseUser, BaseUserManager
@@ -121,6 +122,14 @@ class EmailActivationManager(models.Manager):
 
     def confirmable(self):
         return self.get_queryset().confirmable()
+
+    def email_exists(self, email):
+        return self.get_queryset().filter(
+            Q(email=email) |
+            Q(user__email=email)
+        ).filter(
+            activated=False
+        )
 
 
 class EmailActivation(models.Model):
