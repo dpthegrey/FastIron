@@ -1,6 +1,8 @@
+# Not Readt for Production
+# marketing/
 
 
-
+fast_iron/setings/local.py
 
 .idea
 .DS_STORE
