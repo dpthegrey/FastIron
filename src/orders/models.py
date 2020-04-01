@@ -160,7 +160,7 @@ class Order(models.Model):
         return new_total
 
     def check_done(self):
-        shipping_address_required = not self.cart.is_digital
+        shipping_address_required = not self.cart
         shipping_done = False
         if shipping_address_required and self.shipping_address:
             shipping_done = True

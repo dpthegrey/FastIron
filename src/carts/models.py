@@ -14,7 +14,6 @@ class CartManager(models.Manager):
         qs = self.get_queryset().filter(id=cart_id)
         if qs.count() == 1:
             new_obj = False
-            # print('Cart ID exists')
             cart_obj = qs.first()
             if request.user.is_authenticated and cart_obj.user is None:
                 cart_obj.user = request.user
@@ -26,7 +25,6 @@ class CartManager(models.Manager):
         return cart_obj, new_obj
 
     def new(self, user=None):
-        print(user)
         user_obj = None
         if user is not None:
             if user.is_authenticated:
@@ -52,13 +50,10 @@ class Cart(models.Model):
 
 def m2m_changed_cart_receiver(sender, instance, action, *args, **kwargs):
     if action == 'post_add' or action == 'post_remove' or action == 'post_clear':
-        # print(instance.products.all())
-        # print(instance.total)
         products = instance.products.all()
         total = 0
         for x in products:
             total += x.price
-        # print(total)
         if instance.subtotal != total:
             instance.subtotal = total
             instance.save()
