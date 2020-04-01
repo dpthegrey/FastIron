@@ -54,6 +54,8 @@ class Order(models.Model):
         Address, related_name="shipping_address", null=True, blank=True, on_delete=models.CASCADE)
     billing_address = models.ForeignKey(
         Address, related_name="billing_address", null=True, blank=True, on_delete=models.CASCADE)
+    shipping_address_final = models.TextField(blank=True, null=True)
+    billing_address_final = models.TextField(blank=True, null=True)
     cart = models.ForeignKey(Cart, on_delete=models.CASCADE)
     status = models.CharField(
         max_length=120, default='created', choices=ORDER_STATUS_CHOICES)
@@ -114,6 +116,12 @@ def pre_save_create_order_id(sender, instance, *args, **kwargs):
         billing_profile=instance.billing_profile)
     if qs.exists():
         qs.update(active=False)
+
+    if instance.shipping_address and not instance.shipping_address_final:
+        instance.shipping_address_final = instance.shipping_address.get_address()
+
+    if instance.billing_address and not instance.billing_address_final:
+        instance.billing_address_final = instance.billing_address.get_address()
 
 
 pre_save.connect(pre_save_create_order_id, sender=Order)
