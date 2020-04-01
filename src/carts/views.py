@@ -80,7 +80,7 @@ def checkout_home(request):
 
     login_form = LoginForm(request=request)
     guest_form = GuestForm(request=request)
-    address_form = AddressForm()
+    address_form = AddressCheckoutForm()
     billing_address_id = request.session.get("billing_address_id", None)
     shipping_address_id = request.session.get("shipping_address_id", None)
 
