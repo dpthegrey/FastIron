@@ -1,49 +1,82 @@
 {% extends "base.html" %}
 {% load static %}
 
-<title>Home Page Template</title>
-
 {%block base_head %}
-<link rel="stylesheet" href="{% static 'css/main.css' %}">
+<link rel="stylesheet" href="{% static 'css/homepage.css' %}">
 {% endblock %}
 
-{% block content %}
+<div class="container-fluid">
+    {% block homepage %}
 
 
+    <body id="page-top">
+
+        <!-- Navigation -->
 
 
+        <header class="bg-primary text-white">
+            <div class="container text-center">
+                <h1>Welcome to FastIron</h1>
+                <p class="lead">A online store to buy heavy machinery</p>
+            </div>
+        </header>
 
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2>About this page</h2>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi aliquam
+                            nostrum dicta magni sunt repellat eum culpa accusamus nesciunt praesentium?</p>
+                        <ul>
+                            <li>sadjfslkfjdalkfjdfdasf</li>
+                            <li>sdfasdfadsfasfdfdafadsfa</li>
+                            <li>sdfasdfasfasdfadsfasf</li>
+                            <li>dfafdafdasfdafdasfasdfa</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<!-- <div class='text-center'>
-    <h1>{{ title }}</h1>
-    <h1>Hello, world We're working!</h1>
-</div> -->
+        <section id="services" class="bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2>Services we offer</h2>
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit
+                            inventore,
+                            expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo
+                            assumenda
+                            laborum vel, labore ut velit dignissimos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<!-- <div class="row">
-    <div class="col">
-        <img src="{% static 'img/beach.jpg' %}" class="img-fluid" alt="Beach Image">
-        <p>{{ content }}</p>
-    </div>
-</div> -->
-<!-- {% if request.user.is_authenticated %}
-<div class="row">
-    <div class="col">
-        <h1>Premium</h1>
-        {{ premium_content }}
-    </div>
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2>Contact us</h2>
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat
+                            voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam
+                            et
+                            repudiandae ipsa exercitationem, in, quo totam.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-5 bg-dark">
+            <div class="container">
+                <p class="m-0 text-center text-white">Copyright &copy; FastIron 2020</p>
+            </div>
+            <!-- /.container -->
+        </footer>
+        {% endblock %}
 </div>
-{% endif %} -->
-
-
-
-
-
-
-
-
-
-
-{% endblock %}
 
 <!doctype html>
 <html lang="en">
