@@ -26,7 +26,10 @@
         {% endif %}
         {% block content %}{% endblock %}
     </div>
-    {% block homepage %}{% endblock %}
+    <div class="container-fluid">
+        {% block homepage %}{% endblock %}
+    </div>
+
 
 
     {% include 'base/js.html' %}
