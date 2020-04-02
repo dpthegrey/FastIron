@@ -1,12 +1,13 @@
-<div class="card" style="width: 20rem;">
+<div class="card h-100">
+
     {% if instance.image %}
     <a href="{{ instance.get_absolute_url }}"><img class="card-img-top" src="{{ instance.image.url }}"
             alt="{{ instance.title}} logo"></a>
     {% endif %}
     <div class="card-body text-center">
         <h4 class="card-title">{{ instance.title }}</h4>
+        <h5 class="card-text">${{instance.price}}</h5>
         <p class="card-text">{{ instance.description|linebreaks|truncatewords:14 }}</p>
-        <p class="card-text text-center">${{instance.price}}</p>
 
         <div class='text-center'>
             <a href="{{ instance.get_absolute_url }}" class="btn btn-primary my-2">View</a>
@@ -14,4 +15,8 @@
         </div>
         <!--  <a href="{% url 'products:detail' slug=instance.slug  %}" class="btn btn-warning">URL shortcut</a> -->
     </div>
+    <div class="card-footer">
+        <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+    </div>
+
 </div>
